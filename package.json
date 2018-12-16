@@ -1,0 +1,75 @@
+{
+    "name": "@isomr/razorpay",
+    "version": "1.0.0",
+    "description": "A simple, functional, object-oriented SDK for the Razorpay API.",
+    "main": "lib/index.js",
+    "directories": {
+        "doc": "docs",
+        "example": "examples",
+        "lib": "lib"
+    },
+    "files": [
+        "/lib"
+    ],
+    "scripts": {
+        "test": "tap ./__tests__/*.spec.js ./__tests__/**/*.spec.js --cov --100",
+        "build:doc": "rm -rf ./docs && jsdoc -u examples lib -r -d docs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/labsvisual/razorpay-sdk.git"
+    },
+    "keywords": [
+        "razorpay",
+        "sdk",
+        "security",
+        "api",
+        "node",
+        "js",
+        "javascript"
+    ],
+    "author": "Shreyansh Pandey",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/labsvisual/razorpay-sdk/issues"
+    },
+    "homepage": "https://github.com/labsvisual/razorpay-sdk#readme",
+    "xo": {
+        "esnext": true,
+        "semicolon": true,
+        "space": 4,
+        "rules": {
+            "space-in-parens": [
+                "error",
+                "always"
+            ],
+            "padded-blocks": [
+                "error",
+                "always"
+            ],
+            "array-bracket-spacing": [
+                "error",
+                "always"
+            ],
+            "object-curly-spacing": [
+                "error",
+                "always"
+            ],
+            "template-curly-spacing": [
+                "error",
+                "always"
+            ],
+            "computed-property-spacing": [
+                "error",
+                "always"
+            ]
+        }
+    },
+    "devDependencies": {
+        "codecov": "^3.1.0",
+        "jsdoc": "^3.5.5",
+        "tap": "^12.1.1",
+        "tap-dot": "^2.0.0",
+        "xo": "^0.23.0"
+    }
+}
